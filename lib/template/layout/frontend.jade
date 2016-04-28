@@ -1,0 +1,43 @@
+.frontend
+	header
+		.container
+			nav.navbar.navbar-inverse
+				.container-fluid
+					.navbar-header
+						button.navbar-toggle.collapsed(type="button", class="", data-toggle="collapse", data-target="#navbar")
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+
+						.navbar-brand
+							a(href="/") Zpatra
+
+					#navbar.navbar-collapse.collapse
+						ul.nav.navbar-nav.pull-right
+							li.nav-item
+								a(href=$ren->url('home')) Novinky
+							li.nav-item
+								a(href=$ren->url('tickets')) Vstupenky
+							li.nav-item
+								a(href=$ren->url('schedule')) Program
+							li.dropdown
+								a.dropdown-toggle(data-toggle="dropdown", role="button", href=$ren->url('about'))
+									| O festivalu
+									=" "
+									span.caret
+
+								ul.dropdown-menu
+									li
+										a(href=$ren->url('location')) Místo konání
+									li
+										a(href=$ren->url('faq')) Časté dotazy
+									li
+										a(href=$ren->url('orgs')) Organizátoři
+							li.nav-item
+								a(href=$ren->url('contact')) Kontakt
+
+	.content
+		:php
+			$ren->render_yield();
+			$ren->slot('outer');
+			$ren->slot();

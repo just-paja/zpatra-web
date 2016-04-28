@@ -1,0 +1,26 @@
+machine:
+  php:
+    version: 5.6.14
+dependencies:
+  cache_directories:
+    - "lib/vendor"
+    - "share/bower"
+  post:
+    - bower install
+    - ./bin/manage package artifact
+general:
+  artifacts:
+    - "var/packages"
+deployment:
+  staging:
+    branch: master
+    commands:
+      - ./bin/deploy staging
+  release:
+    tag: /[0-9]+\.[0-9]+\.[0-9]+/
+    commands:
+      - ./bin/deploy production
+test:
+  override:
+    - mkdir -p $CIRCLE_TEST_REPORTS
+    - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml

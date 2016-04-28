@@ -1,0 +1,17 @@
+{
+	"packages":{
+		"script":{
+			"main":[
+				"bower/jquery",
+				"bower/bootstrap/dist/js/bootstrap.min.js"
+			]
+		},
+
+		"style":{
+			"screen":[
+				"bower/bootstrap/dist/css/bootstrap.css",
+				"styles/main"
+			]
+		}
+	}
+}

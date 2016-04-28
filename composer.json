@@ -1,0 +1,12 @@
+{
+	"name":"just-paja/zpatra-web",
+	"description":"A presentation for Prague improv festival Zptra",
+	"license":"GPL-3.0+",
+	"config":{
+		"vendor-dir":"lib/vendor"
+	},
+	"require":{
+		"just-paja/fudjan":"^1.2.4",
+		"just-paja/fudjan-godmode": "^1.0.3"
+	}
+}

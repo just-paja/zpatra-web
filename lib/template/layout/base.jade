@@ -1,0 +1,49 @@
+doctype html
+html(lang=$loc->get_lang())
+  head
+    link(rel='stylesheet', type='text/css', href=$ren->link_resource('style', 'screen'))
+    script(src=$ren->link_resource('script', 'main'))
+
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    meta(name="description", content="Zpatra - Festival divadelní improvizace")
+    meta(name="viewport", content="width=device-width")
+
+    meta(name="og:title", content=$res->title)
+    meta(name="og:type", content="website")
+    meta(name="og:description", content="Zpatra je festival divadelní improvizace pro veřejnost.")
+    meta(name="og:image", content='http://'.$rq->host.\System\Resource::get_url('static', 'pixmap', 'og-share.jpg'))
+    meta(name="og:url", content=$rq->path)
+
+    :php
+      $ren->slot('og')
+
+    :php
+      $ren->content_for('title', $res->title);
+      $ren->content_from('head');
+
+  body
+    .base-wrapper
+      :php
+        $ren->render_yield();
+        $ren->slot();
+
+    footer
+      .container
+        .col-sm-4
+          .sheep-left
+            .sheep-jump
+        .col-sm-8
+          .partners.text-xs-center.text-sm-right
+            .media.partner
+              .media-left
+                a(href="http://improliga.cz")
+                  img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
+
+              .media-body
+                a.media-heading(href="http://improliga.cz")
+                  span.name Česká improvizační liga
+                  br
+                  span.desc Hlavní pořadatel
+
+
+    include ../partial/ga.jade

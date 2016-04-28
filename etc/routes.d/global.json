@@ -1,0 +1,69 @@
+[
+	{
+		"name":"home",
+		"url":"/",
+		"title":"Zpatra",
+		"modules":[
+			["system.partial", {"template":"pages/home"}]
+		]
+	},
+
+	{
+		"name":"tickets",
+		"url":"/vstupenky",
+		"title":"Vstupenky Zpatra",
+		"modules":[
+		]
+	},
+
+	{
+		"name":"schedule",
+		"url":"/program",
+		"title":"Program Zpatra",
+		"modules":[
+		]
+	},
+
+	{
+		"name":"about",
+		"url":"/o",
+		"title":"O Zpatra",
+		"modules":[
+			["system.partial", {"template":"pages/about"}]
+		]
+	},
+
+	{
+		"name":"location",
+		"url":"/kde",
+		"title":"Kde bude Zpatra",
+		"modules":[
+		]
+	},
+
+	{
+		"name":"faq",
+		"url":"/na-co-se-ptate",
+		"title":"Na co se ptáte Zpatra",
+		"modules":[
+		]
+	},
+
+	{
+		"name":"orgs",
+		"url":"/organizatori",
+		"title":"Organizátoři Zpatra",
+		"modules":[
+			["system.partial", {"template":"pages/orgs"}]
+		]
+	},
+
+	{
+		"name":"contact",
+		"url":"/kontakt",
+		"title":"Kontakt Zpatra",
+		"modules":[
+			["system.partial", {"template":"pages/contact"}]
+		]
+	}
+]
