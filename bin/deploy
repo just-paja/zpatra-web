@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-app="improtresk-2016"
+app="zpatra-web"
 artifact="var/packages/artifact.tar.gz"
 env=${1}
 dest="/tmp/${app}.${env}.tar.gz"
