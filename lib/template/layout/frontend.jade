@@ -15,24 +15,15 @@
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav.pull-right
 							li.nav-item
-								a(href=$ren->url('home')) Novinky
-							li.nav-item
 								a(href=$ren->url('tickets')) Vstupenky
+							li.nav-item
+								a(href=$ren->url('artists')) Účinkující
+							li.nav-item
+								a(href=$ren->url('workshops')) Workshopy
 							li.nav-item
 								a(href=$ren->url('schedule')) Program
 							li.dropdown
-								a.dropdown-toggle(data-toggle="dropdown", role="button", href=$ren->url('about'))
-									| O festivalu
-									=" "
-									span.caret
-
-								ul.dropdown-menu
-									li
-										a(href=$ren->url('location')) Místo konání
-									li
-										a(href=$ren->url('faq')) Časté dotazy
-									li
-										a(href=$ren->url('orgs')) Organizátoři
+								a(href=$ren->url('about')) O festivalu
 							li.nav-item
 								a(href=$ren->url('contact')) Kontakt
 

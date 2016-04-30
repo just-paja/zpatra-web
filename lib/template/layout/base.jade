@@ -29,21 +29,10 @@ html(lang=$loc->get_lang())
 
     footer
       .container
-        .col-sm-4
-          .sheep-left
-            .sheep-jump
-        .col-sm-8
-          .partners.text-xs-center.text-sm-right
-            .media.partner
-              .media-left
-                a(href="http://improliga.cz")
-                  img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
-
-              .media-body
-                a.media-heading(href="http://improliga.cz")
-                  span.name Česká improvizační liga
-                  br
-                  span.desc Hlavní pořadatel
+        .col-sm-6
+          .partners
+            a(href="http://improliga.cz")
+              img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
 
 
     include ../partial/ga.jade

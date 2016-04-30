@@ -13,6 +13,25 @@
 		"url":"/vstupenky",
 		"title":"Vstupenky Zpatra",
 		"modules":[
+			["system.partial", {"template":"pages/tickets"}]
+		]
+	},
+
+	{
+		"name":"artists",
+		"url":"/ucinkujici",
+		"title":"Účinkující Zpatra",
+		"modules":[
+			["system.partial", {"template":"pages/artists"}]
+		]
+	},
+
+	{
+		"name":"workshops",
+		"url":"/workshopy",
+		"title":"Workshopy Zpatra",
+		"modules":[
+			["system.partial", {"template":"pages/workshops"}]
 		]
 	},
 
@@ -21,6 +40,7 @@
 		"url":"/program",
 		"title":"Program Zpatra",
 		"modules":[
+			["system.partial", {"template":"pages/schedule"}]
 		]
 	},
 
@@ -29,7 +49,8 @@
 		"url":"/o",
 		"title":"O Zpatra",
 		"modules":[
-			["system.partial", {"template":"pages/about"}]
+			["system.partial", {"template":"pages/about"}],
+			["system.partial", {"template":"pages/orgs"}]
 		]
 	},
 
