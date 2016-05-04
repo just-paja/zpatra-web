@@ -29,29 +29,48 @@ html(lang=$loc->get_lang())
 
     footer
       .container
-        .col-sm-6
-          .row
-            .social.pull-left
+        .row
+          .col-sm-6
+            .social
               a(href=$ren->url('home'))
                 span.logo.logo-zpatra
 
               a(href="https://fb.com/festivalzpatra")
                 span.fa.fa-facebook-official
 
-            .partners.pull-left
-              a(href="http://improliga.cz")
-                img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
-                =' '
-                .multiline-label
-                  | Improliga
-                  br
-                  | Hlavní partner
-
-        .col-xs-12.col-sm-6.text-right
-          .row
+          .col-xs-12.col-sm-6.text-right
             | Pražský festival improvizačního divadla Zpatra
             br
             a(href="mailto:info@zpatra.cz") info@zpatra.cz
 
+        hr
+
+        .row
+          .col-xs-12
+            .pull-left.partners
+              h4 Partneři
+
+              .partners-box
+                a(href="http://improliga.cz")
+                  img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
+                  =' '
+                  .multiline-label
+                    | Improliga
+
+                a(href="http://improinstitut.cz")
+                  img(src=$ren->link_resource('pixmap', 'logo/impro-institut.png'))
+                  =' '
+                  .multiline-label
+                    | Impro Institut
+
+
+            .pull-left.partners
+              h4 Festival podpořili
+              .partners-box
+                a(href="http://improinstitut.cz")
+                  img(src=$ren->link_resource('pixmap', 'logo/nzu-small.png'))
+                  =' '
+                  .multiline-label
+                    | Nadace život umělce
 
     include ../partial/ga.jade
