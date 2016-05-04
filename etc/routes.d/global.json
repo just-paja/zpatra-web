@@ -3,6 +3,7 @@
 		"name":"home",
 		"url":"/",
 		"title":"Zpatra",
+		"layout":["layout/base", "layout/home"],
 		"modules":[
 			["system.partial", {"template":"pages/home"}]
 		]

@@ -1,0 +1,25 @@
+nav.navbar.navbar-inverse
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(type="button", class="", data-toggle="collapse", data-target="#navbar")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+      .navbar-brand
+        a(href="/") Zpatra
+
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.pull-right
+        li.nav-item
+          a(href=$ren->url('tickets')) Vstupenky
+        li.nav-item
+          a(href=$ren->url('artists')) Účinkující
+        li.nav-item
+          a(href=$ren->url('workshops')) Workshopy
+        li.nav-item
+          a(href=$ren->url('schedule')) Program
+        li.dropdown
+          a(href=$ren->url('about')) O festivalu
+        li.nav-item
+          a(href=$ren->url('contact')) Kontakt
