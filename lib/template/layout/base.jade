@@ -33,6 +33,13 @@ html(lang=$loc->get_lang())
           .partners
             a(href="http://improliga.cz")
               img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
+              =' '
+              .multiline-label
+                | Improliga
+                br
+                | Hlavní partner
+        .col-sm-6
+          a(href="mailto:info@zpatra.cz") info@zpatra.cz
 
 
     include ../partial/ga.jade

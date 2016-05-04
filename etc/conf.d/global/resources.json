@@ -10,7 +10,7 @@
 		"style":{
 			"screen":[
 				"bower/bootstrap/dist/css/bootstrap.css",
-				"styles/main"
+				"styles/layout"
 			]
 		}
 	}
