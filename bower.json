@@ -32,6 +32,7 @@
     "pwf-queue": "~2.0.1",
     "reset-css": "~2.0.2011012603",
     "pwf-ui-popup": "~0.1.4",
-    "pwf-paginator": "~0.3.3"
+    "pwf-paginator": "~0.3.3",
+    "font-awesome": "fontawesome#~4.6.1"
   }
 }

@@ -10,6 +10,7 @@
 		"style":{
 			"screen":[
 				"bower/bootstrap/dist/css/bootstrap.css",
+				"bower/font-awesome/css/font-awesome.min.css",
 				"styles/layout"
 			]
 		}

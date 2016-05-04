@@ -30,16 +30,25 @@ html(lang=$loc->get_lang())
     footer
       .container
         .col-sm-6
-          .partners
-            a(href="http://improliga.cz")
-              img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
-              =' '
-              .multiline-label
-                | Improliga
-                br
-                | Hlavní partner
-        .col-sm-6
-          a(href="mailto:info@zpatra.cz") info@zpatra.cz
+          .row
+            .social.pull-left
+              a(href="https://fb.com/festivalzpatra")
+                span.fa.fa-facebook-official
+
+            .partners.pull-left
+              a(href="http://improliga.cz")
+                img(src=$ren->link_resource('pixmap', 'logo/improliga.png'))
+                =' '
+                .multiline-label
+                  | Improliga
+                  br
+                  | Hlavní partner
+
+        .col-xs-12.col-sm-6.text-right
+          .row
+            | Pražský festival improvizačního divadla Zpatra
+            br
+            a(href="mailto:info@zpatra.cz") info@zpatra.cz
 
 
     include ../partial/ga.jade
