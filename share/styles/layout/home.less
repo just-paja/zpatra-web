@@ -1,5 +1,5 @@
-header {
-  &.home {
+.home {
+  header {
     background-image: url(<pixmap(bg/home/fila.jpg)>);
     background-position: center center;
     background-size:cover;
@@ -8,6 +8,21 @@ header {
 
     .home-menu {
       padding-top:300px;
+      position: relative;
+
+      .label-date {
+        background:rgba(16,16,16,.75);
+        border-radius:0;
+        font-size:42px;
+        font-style: italic;
+        font-weight:normal;
+        position:absolute;
+        right:10%;
+        text-shadow:
+          0 0 50px #000
+          ;
+        top:45%;
+      }
     }
   }
 }
