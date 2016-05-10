@@ -10,6 +10,16 @@
 	},
 
 	{
+		"name":"news:janko-polak",
+		"url":"/novinky/janko-polak-rozhovor",
+		"title":"Rozhovor: Janko Polák Zpatra",
+		"layout":["layout/base", "layout/frontend"],
+		"modules":[
+			["system.partial", {"template":"pages/interview/janko-polak"}]
+		]
+	},
+
+	{
 		"name":"tickets",
 		"url":"/vstupenky",
 		"title":"Vstupenky Zpatra",
