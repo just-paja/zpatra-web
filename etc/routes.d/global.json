@@ -50,8 +50,7 @@
 		"url":"/o",
 		"title":"O Zpatra",
 		"modules":[
-			["system.partial", {"template":"pages/about"}],
-			["system.partial", {"template":"pages/orgs"}]
+			["system.partial", {"template":"pages/about"}]
 		]
 	},
 
