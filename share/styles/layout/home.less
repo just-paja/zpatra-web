@@ -1,27 +1,58 @@
 .home {
   header {
-    background-image: url(<pixmap(bg/home/fila.jpg)>);
-    background-position: center center;
-    background-size:cover;
-    background-repeat:no-repeat;
     height:400px;
 
+    .carousel-inner {
+      height:400px;
+    }
+
+    .carousel .item {
+      background-position: center center;
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:400px;
+
+      &#carousel-fila {
+        background-image: url(<pixmap(bg/home/fila.jpg)>);
+      }
+
+      &#carousel-improvize {
+        background-image: url(<pixmap(bg/home/improvize.jpg)>);
+      }
+
+      &#carousel-streli {
+        background-image: url(<pixmap(bg/home/streli.jpg)>);
+      }
+
+      &#carousel-pest {
+        background-image: url(<pixmap(bg/home/pest.jpg)>);
+      }
+
+      &#carousel-divaci {
+        background-image: url(<pixmap(bg/home/divaci.jpg)>);
+      }
+
+      &#carousel-experiment {
+        background-image: url(<pixmap(bg/home/experiment.jpg)>);
+      }
+    }
+
     .home-menu {
-      padding-top:300px;
-      position: relative;
+      position: absolute;
+      top: 0;
+      left:0;
+      right:0;
 
       .label-date {
-        background:rgba(16,16,16,.75);
+        background:rgba(255,255,255,.85);
+        color:#000;
         border-radius:0;
         font-size:42px;
         font-style: italic;
         font-weight:normal;
         position:absolute;
         right:10%;
-        text-shadow:
-          0 0 50px #000
-          ;
-        top:45%;
+        top:200px;
       }
     }
   }

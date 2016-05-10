@@ -1,6 +1,30 @@
 .frontend.home
 	header
-		.container.home-menu
+		#homeCarousel.carousel.slide(data-ride="carousel")
+			.carousel-inner(role="listbox")
+				#carousel-fila.item.active
+				#carousel-improvize.item
+				#carousel-streli.item
+				#carousel-pest.item
+				#carousel-experiment.item
+				#carousel-divaci.item
+			ol.carousel-indicators
+				li.active(data-target="#carousel-fila", data-slide-to="0")
+				li(data-target="#carousel-improvize" data-slide-to="1")
+				li(data-target="#carousel-streli" data-slide-to="2")
+				li(data-target="#carousel-pest" data-slide-to="3")
+				li(data-target="#carousel-divaci" data-slide-to="4")
+				li(data-target="#carousel-experiment" data-slide-to="5")
+
+
+			a.left.carousel-control(role="button", data-slide="prev")
+				span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+				span.sr-only Previous
+			a.right.carousel-control(href="#homeCarousel", role="button", data-slide="next")
+				span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+				span.sr-only Next
+
+		.home-menu
 			.label.label-date
 				| 17. - 19.
 				br
@@ -12,3 +36,4 @@
 			$ren->render_yield();
 			$ren->slot('outer');
 			$ren->slot();
+
