@@ -3,6 +3,20 @@
 		.container
 			include ../partial/navbar.jade
 
+			.label.label-danger.label-date
+				| 17. - 18.
+				br
+				| června 2016
+				hr
+				small
+					| Zbývá
+					:php
+						$now = new DateTime();
+						$then = new DateTime('2016-06-17 17:30');
+						$remaining = $now->diff($then);
+
+					= $remaining->format("%a dní")
+
 	.content
 		:php
 			$ren->render_yield();
