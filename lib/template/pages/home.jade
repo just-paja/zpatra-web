@@ -1,6 +1,6 @@
-.container
+.container-fluid
   section.row.page
-    .col-md-8
+    .col-md-6.col-lg-7
       h1 Novinky
 
       hr
@@ -28,16 +28,21 @@
       p
         a.btn.btn-primary(href=$ren->url('artists')) Více o účinkujících
 
-
-    .col-md-4
+    .col-md-6.col-lg-5
       h2 Kde to bude?
 
       .info
-        strong Název místa
+        a(href="http://altart.cz")
+          strong Studio ALTA
         br
-        a(href="#") odkaz na mapu
-
-      h2 Vstupenky
+        | U Výstaviště 21, Praha 7
+        br
+        a(href="https://www.google.cz/maps/place/U+Výstaviště+1286%2F21,+170+00+Praha+7-Holešovice/") odkaz na mapu
 
       .info
-        a(href=$ren->url('tickets')) Vstupenky zde
+        a.btn.btn-primary(href=$ren->url('tickets')) Vstupenky zde
+
+      h2 Mezitím na Facebooku
+
+      .fb-comments(data-href="https://www.facebook.com/festivalzpatra/", data-numposts="5")
+
