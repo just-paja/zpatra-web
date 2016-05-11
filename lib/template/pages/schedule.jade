@@ -4,7 +4,9 @@
 
     h2 Pátek 17. 6.
 
-    p Program připravujeme
+    p Páteční program zatím připravujeme
+
+    hr
 
     h2 Sobota 18. 6.
 
@@ -12,69 +14,84 @@
       .col-md-4
         h3 Kavárna
 
-        ul.list-unstyled
+        ul.list-unstyled.schedule
           li
-            .label.label-default 14:30 - 14:50
+            .left-col
+              .label.label-default 14:30 - 14:50
             =' '
             | Bertram
           li
-            .label.label-default 15:00 - 15:40
+            .left-col
+              .label.label-default 15:00 - 15:40
             =' '
             | Slam Poetry
           li
-            .label.label-default 15:40 - 17:00
+            .left-col
+              .label.label-default 15:40 - 17:00
             =' '
             | Open mic
           li
-            .label.label-default 17:00 - 17:30
+            .left-col
+              .label.label-primary 17:00 - 17:30
             =' '
-            | Bertram
+            a(href=$ren->url('artists').'#bertram') Bertram
 
       .col-md-4
         h3 Divadlo
 
-        ul.list-unstyled
+        ul.list-unstyled.schedule
           li
-            .label.label-default 16:15 - 17:00
+            .left-col
+              .label.label-default 16:15 - 17:00
             =' '
             | Talkshow s účinkujícími
           li
-            .label.label-default 17:30
+            .left-col
+              .label.label-primary 17:30
             =' '
             | Úvodní slovo
           li
-            .label.label-default 17:45 - 18:30
+            .left-col
+              .label.label-primary 17:45 - 18:30
             =' '
-            | IMPRA
+            a(href=$ren->url('artists').'#impra') IMPRA
           li
-            .label.label-default 18:45 - 19:30
+            .left-col
+              .label.label-primary 18:45 - 19:30
             =' '
             | Longformy
           li
-            .label.label-default 20:00 - 20:45
+            .left-col
+              .label.label-primary 20:00 - 20:45
             =' '
-            | Blood Love Rethorics Comedy Improv
+            a(href=$ren->url('artists').'#blr') Blood Love Rethorics
           li
-            .label.label-default 21:00 - 22:00
+            .left-col
+              .label.label-primary 21:00 - 22:00
             =' '
-            | Die Gorillas
+            a(href=$ren->url('artists').'#dieGorillas') Die Gorillas
 
       .col-md-4
         h3 Workshopy
 
-        ul.list-unstyled
+        ul.list-unstyled.schedule
           li
-            .label.label-default 9:30 - 14:00
+            .left-col
+              .label.label-warning 9:30 - 14:00
             =' '
-            | Workshop s Die Gorillas, první skupina
+            a(href=$ren->url('artists').'#dieGorillas') Die Gorillas
+            | , první skupina
           li
-            .label.label-default 10:00 - 13:00
+            .left-col
+              .label.label-warning 10:00 - 13:00
             =' '
-            | Workshop Masky a Commedia dell' Arte
+            | Masky a Commedia dell' Arte
           li
-            .label.label-default 14:15 - 17:15
+            .left-col
+              .label.label-warning 14:15 - 17:15
             =' '
-            | Workshop s Die Gorillas, druhá skupina
+            a(href=$ren->url('artists').'#dieGorillas') Die Gorillas
+            | , druhá skupina
 
     .row
       p Vstupné na odpolední program do 17:30 je zdarma. Vstupné na workshopy se platí zvlášť.
