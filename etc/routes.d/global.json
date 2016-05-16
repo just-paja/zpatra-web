@@ -2,7 +2,7 @@
 	{
 		"name":"home",
 		"url":"/",
-		"title":"Zpatra",
+		"title":"Zpatra - festival divadelní improvizace",
 		"layout":["layout/base", "layout/home"],
 		"modules":[
 			["system.partial", {"template":"pages/home"}]
@@ -22,7 +22,7 @@
 	{
 		"name":"tickets",
 		"url":"/vstupenky",
-		"title":"Vstupenky Zpatra",
+		"title":"Vstupenky Zpatra - festival divadelní improvizace",
 		"modules":[
 			["system.partial", {"template":"pages/tickets"}]
 		]
@@ -31,7 +31,7 @@
 	{
 		"name":"artists",
 		"url":"/ucinkujici",
-		"title":"Účinkující Zpatra",
+		"title":"Účinkující Zpatra - festival divadelní improvizace",
 		"modules":[
 			["system.partial", {"template":"pages/artists"}]
 		]
@@ -40,7 +40,7 @@
 	{
 		"name":"workshops",
 		"url":"/workshopy",
-		"title":"Workshopy Zpatra",
+		"title":"Workshopy Zpatra - festival divadelní improvizace",
 		"modules":[
 			["system.partial", {"template":"pages/workshops"}]
 		]
@@ -49,7 +49,7 @@
 	{
 		"name":"schedule",
 		"url":"/program",
-		"title":"Program Zpatra",
+		"title":"Program Zpatra - festival divadelní improvizace",
 		"modules":[
 			["system.partial", {"template":"pages/schedule"}]
 		]
@@ -58,7 +58,7 @@
 	{
 		"name":"about",
 		"url":"/o",
-		"title":"O Zpatra",
+		"title":"O Zpatra - festival divadelní improvizace",
 		"modules":[
 			["system.partial", {"template":"pages/about"}]
 		]
@@ -67,7 +67,7 @@
 	{
 		"name":"location",
 		"url":"/kde",
-		"title":"Kde bude Zpatra",
+		"title":"Kde bude Zpatra - festival divadelní improvizace",
 		"modules":[
 		]
 	},
@@ -75,7 +75,7 @@
 	{
 		"name":"faq",
 		"url":"/na-co-se-ptate",
-		"title":"Na co se ptáte Zpatra",
+		"title":"Na co se ptáte Zpatra - festival divadelní improvizace",
 		"modules":[
 		]
 	},
@@ -83,7 +83,7 @@
 	{
 		"name":"orgs",
 		"url":"/organizatori",
-		"title":"Organizátoři Zpatra",
+		"title":"Organizátoři Zpatra - festival divadelní improvizace",
 		"modules":[
 			["system.partial", {"template":"pages/orgs"}]
 		]
@@ -92,7 +92,7 @@
 	{
 		"name":"contact",
 		"url":"/kontakt",
-		"title":"Kontakt Zpatra",
+		"title":"Kontakt Zpatra - festival divadelní improvizace",
 		"modules":[
 			["system.partial", {"template":"pages/contact"}]
 		]
