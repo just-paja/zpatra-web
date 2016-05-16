@@ -12,7 +12,7 @@ html(lang=$loc->get_lang())
     meta(name="og:type", content="website")
     meta(name="og:description", content="Zpatra je festival divadelní improvizace pro veřejnost.")
     meta(name="og:image", content='http://'.$rq->host.\System\Resource::get_url('static', 'pixmap', 'og-share.jpg'))
-    meta(name="og:url", content=$rq->path)
+    meta(name="og:url", content='http://'.$rq->host.$rq->path)
 
     :php
       $ren->slot('og')
