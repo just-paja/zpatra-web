@@ -20,6 +20,16 @@
 	},
 
 	{
+		"name":"news:christoph-jungmann",
+		"url":"/novinky/christoph-jungmann-rozhovor",
+		"title":"Rozhovor: Christoph Jungmann Zpatra",
+		"layout":["layout/base", "layout/frontend"],
+		"modules":[
+			["system.partial", {"template":"pages/interview/christoph-jungmann"}]
+		]
+	},
+
+	{
 		"name":"tickets",
 		"url":"/vstupenky",
 		"title":"Vstupenky Zpatra - festival divadelní improvizace",
