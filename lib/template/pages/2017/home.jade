@@ -1,0 +1,84 @@
+.content
+  .page.home
+    .container
+      .row
+        .col-xs-8.col-sm-10
+          h1
+            ='Zpatra 2017'
+            br
+            small Prague Improv Festival
+          .next-date 20. - 21. 10. 2017
+        .col-xs-4.col-sm-2
+          img.img-responsive(src=$ren->link_resource('pixmap', 'logo/zpatra.png'))
+
+      #homeCarousel.carousel.slide(data-ride="carousel")
+        .carousel-inner(role="listbox")
+          #carousel-fila.item.active
+          #carousel-improvize.item
+          #carousel-streli.item
+          #carousel-pest.item
+          #carousel-experiment.item
+          #carousel-divaci.item
+        ol.carousel-indicators
+          li.active(data-target="#carousel-fila", data-slide-to="0")
+          li(data-target="#carousel-improvize" data-slide-to="1")
+          li(data-target="#carousel-streli" data-slide-to="2")
+          li(data-target="#carousel-pest" data-slide-to="3")
+          li(data-target="#carousel-divaci" data-slide-to="4")
+          li(data-target="#carousel-experiment" data-slide-to="5")
+
+        a.left.carousel-control(href="#homeCarousel", role="button", data-slide="prev")
+          span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+          span.sr-only Previous
+        a.right.carousel-control(href="#homeCarousel", role="button", data-slide="next")
+          span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+          span.sr-only Next
+
+
+      h2 Co bylo v roce 2017
+      .text-center
+        iframe(width="560", height="315", src="https://www.youtube.com/embed/r4rUDHg7UzI", frameborder="0", allowfullscreen)
+
+      p
+        a(href="http://2016.zpatra.cz") Více na starém webu
+
+      h2 A co vás čeká v roce 2017?
+
+      p
+        Neopakovatelná představení domácích i zahraničních účinkujících. Jedinečný program podporující
+        sdílení a potkávání se. Zajímavé a užitečné workshopy. Napište si datum do diáře ještě dnes! :)
+
+      h2 Organizační tým
+
+      .row
+        .col-md-4.col-sm-6
+          .row
+            .col-xs-6
+              h3
+                ='Pavel Wieser'
+                br
+                small programový ředitel
+
+              div
+                ='pavel@zpatra.cz'
+                ='+420 732 964 959'
+            .col-xs-6
+              img.img-responsive.img-circle(src=$ren->link_resource('pixmap', 'orgs/pavel.jpg'))
+
+        .col-md-4.col-sm-6
+          .row
+            .col-xs-6
+              h3
+                ='Markéta Vlková'
+                br
+                small marketingová ředitelka
+
+              div
+                ='marketa@zpatra.cz'
+                ='+420 737 483 001'
+
+            .col-xs-6
+              img.img-responsive.img-circle(src=$ren->link_resource('pixmap', 'orgs/marketa.jpg'))
+
+
+

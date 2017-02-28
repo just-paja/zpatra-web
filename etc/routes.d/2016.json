@@ -1,0 +1,110 @@
+[
+	{
+		"name":"home",
+		"url":"/",
+		"title":"Zpatra - festival divadelní improvizace",
+		"layout":["layout/base", "layout/home"],
+		"modules":[
+			["system.partial", {"template":"pages/home"}]
+		]
+	},
+
+	{
+		"name":"news:janko-polak",
+		"url":"/novinky/janko-polak-rozhovor",
+		"title":"Rozhovor: Janko Polák Zpatra",
+		"layout":["layout/base", "layout/frontend"],
+		"modules":[
+			["system.partial", {"template":"pages/interview/janko-polak"}]
+		]
+	},
+
+	{
+		"name":"news:christoph-jungmann",
+		"url":"/novinky/christoph-jungmann-rozhovor",
+		"title":"Rozhovor: Christoph Jungmann Zpatra",
+		"layout":["layout/base", "layout/frontend"],
+		"modules":[
+			["system.partial", {"template":"pages/interview/christoph-jungmann"}]
+		]
+	},
+
+	{
+		"name":"tickets",
+		"url":"/vstupenky",
+		"title":"Vstupenky Zpatra - festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/tickets"}]
+		]
+	},
+
+	{
+		"name":"artists",
+		"url":"/ucinkujici",
+		"title":"Účinkující Zpatra - festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/artists"}]
+		]
+	},
+
+	{
+		"name":"workshops",
+		"url":"/workshopy",
+		"title":"Workshopy Zpatra - festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/workshops"}]
+		]
+	},
+
+	{
+		"name":"schedule",
+		"url":"/program",
+		"title":"Program Zpatra - festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/schedule"}]
+		]
+	},
+
+	{
+		"name":"about",
+		"url":"/o",
+		"title":"O Zpatra - festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/about"}]
+		]
+	},
+
+	{
+		"name":"location",
+		"url":"/kde",
+		"title":"Kde bude Zpatra - festival divadelní improvizace",
+		"modules":[
+		]
+	},
+
+	{
+		"name":"faq",
+		"url":"/na-co-se-ptate",
+		"title":"Na co se ptáte Zpatra - festival divadelní improvizace",
+		"modules":[
+		]
+	},
+
+	{
+		"name":"orgs",
+		"url":"/organizatori",
+		"title":"Organizátoři Zpatra - festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/orgs"}]
+		]
+	},
+
+	{
+		"name":"contact",
+		"url":"/kontakt",
+		"title":"Kontakt Zpatra - festival divadelní improvizace",
+		"modules":[
+			["system.partial", {"template":"pages/contact"}]
+		]
+	}
+]

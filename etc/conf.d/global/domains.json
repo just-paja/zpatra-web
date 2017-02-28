@@ -1,8 +1,13 @@
 {
 	"overwrite":true,
-	"global":{
-		"rules":[".*"],
+	"2016":{
+		"rules":["2016.zpatra.cz.*"],
 		"layout":["layout/base", "layout/frontend"],
+		"policies":["www_free", "frontend_config", "frontend_api"]
+	},
+	"global":{
+		"rules":["zpatra.cz.*"],
+		"layout":["layout/base"],
 		"policies":["www_free", "frontend_config", "frontend_api"],
 		"init":["godmode"]
 	}
