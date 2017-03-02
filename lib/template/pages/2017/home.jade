@@ -13,19 +13,29 @@
 
       #homeCarousel.carousel.slide(data-ride="carousel")
         .carousel-inner(role="listbox")
-          #carousel-fila.item.active
-          #carousel-improvize.item
-          #carousel-streli.item
-          #carousel-pest.item
-          #carousel-experiment.item
-          #carousel-divaci.item
+          #carousel-improv-1.item.active
+          #carousel-improv-2.item
+          #carousel-improv-3.item
+          #carousel-improv-4.item
+          #carousel-improv-5.item
+          #carousel-improv-6.item
+          #carousel-lee.item
+          #carousel-masks.item
+          #carousel-tomas-jirecek.item
+          #carousel-vanda-zako.item
+          #carousel-orgs.item
         ol.carousel-indicators
-          li.active(data-target="#carousel-fila", data-slide-to="0")
-          li(data-target="#carousel-improvize" data-slide-to="1")
-          li(data-target="#carousel-streli" data-slide-to="2")
-          li(data-target="#carousel-pest" data-slide-to="3")
-          li(data-target="#carousel-divaci" data-slide-to="4")
-          li(data-target="#carousel-experiment" data-slide-to="5")
+          li.active(data-target="#carousel-improv-1", data-slide-to="0")
+          li(data-target="#carousel-improv-2", data-slide-to="1")
+          li(data-target="#carousel-improv-3", data-slide-to="2")
+          li(data-target="#carousel-improv-4", data-slide-to="3")
+          li(data-target="#carousel-improv-5", data-slide-to="4")
+          li(data-target="#carousel-improv-6", data-slide-to="5")
+          li(data-target="#carousel-lee", data-slide-to="6")
+          li(data-target="#carousel-masks", data-slide-to="7")
+          li(data-target="#carousel-tomas-jirecek", data-slide-to="8")
+          li(data-target="#carousel-vanda-zako", data-slide-to="9")
+          li(data-target="#carousel-orgs", data-slide-to="10")
 
         a.left.carousel-control(href="#homeCarousel", role="button", data-slide="prev")
           span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
@@ -79,6 +89,3 @@
 
             .col-xs-6
               img.img-responsive.img-circle(src=$ren->link_resource('pixmap', 'orgs/marketa.jpg'))
-
-
-
